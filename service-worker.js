@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v4';
+const CACHE_NAME = 'static-cache-v5';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
   'index.html',
@@ -13,7 +13,7 @@ const FILES_TO_CACHE = [
   'assets/icons/icon-192x192.png',
   'assets/icons/icon-256x256.png',
   'assets/icons/icon-384x384.png',
-  'assets/icons/icon-512-512.png',
+  'assets/icons/icon-512x512.png',
   'assets/images/ac-2.webp',
   'assets/images/ac-3.webp',
   'assets/images/ac-4-black-flag.webp',
