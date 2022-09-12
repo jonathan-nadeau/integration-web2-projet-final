@@ -1,0 +1,28 @@
+.navbar {
+  box-shadow: 3px 0px 10px $primary;
+}
+
+.navbar-brand {
+  img {
+    width: 70px;
+  }
+}
+
+.nav-link {
+  @extend .text-primary;
+  border-bottom: 2px solid transparent;
+  @extend .fw-bold;
+  @extend .mx-2;
+  width: fit-content;
+  transition: border-bottom 300ms ease-in-out;
+  &:hover {
+    border-bottom-color: #7a1315;
+  }
+}
+
+.nav-link {
+  @extend .ms-auto;
+}
+.active {
+  border-bottom: 2px solid #7a1315;
+}

@@ -1,0 +1,21 @@
+section,
+.section {
+  @extend .py-5;
+  h2 {
+    @extend .fs-3;
+    @extend .mb-4;
+  }
+}
+
+.background {
+  background-image: url('../assets/images/section-bg.webp');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @extend .text-center;
+  &-reverse {
+    @extend .background;
+    background-image: url('../assets/images/section-reverse-bg.webp');
+    background-position: top;
+  }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assassin's Creed | Personnages</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- /CSS -->
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- /Bootstrap icons -->
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Accueil </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="active nav-link"
+                aria-current="page"
+                href="characters.html"
+                >Personnages et jeux</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contest.html">Concours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- /Navbar -->
+
+    <!-- main -->
+
+    <main class="px-1">
+      <h1 class="visually-hidden">Personnages et jeux</h1>
+
+      <!-- section -->
+
+      <section id="characters" class="background">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-center my-5">
+              <span class="text-primary">Personnages</span> à travers les jeux
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-xl-8 offset-xl-2">
+              <div
+                id="charactersCarousel"
+                class="carousel slide w-100 mb-5"
+                data-bs-ride="false"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/basim.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Basim"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Basim</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/ezio.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Ezio"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Ezio</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/shay.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Shay"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Shay</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/edward_kenway.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Edward Kenway"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Edward Kenway</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/connor.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Connor"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Connor</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/jacob_and_evie_frye.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Jacob et Evie Frye"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Jacob et Evie Frye</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/bayek.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Bayek"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Bayek</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/kassandra_alexios.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Kassandra et Alexios"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Kassandra et Alexios</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/eivor.webp"
+                      class="d-block w-100 rounded-2"
+                      alt="Eivor"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="fs-1">Eivor</h2>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#charactersCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#charactersCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- /section -->
+
+      <!-- section -->
+      <section id="games" class="background-reverse">
+        <div class="container">
+          <div class="row pt-5">
+            <h2 class="h1 text-center my-5">Jeux</h2>
+          </div>
+          <div class="row g-5">
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-2.webp"
+                  alt="Assassin's creed 2"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">Assassin's creed II</h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2009</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-brotherhood.webp"
+                  alt="Assassin's creed Brotherhood"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">
+                    Assassin's creed Brotherhood
+                  </h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2010</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-revelations.webp"
+                  alt="Assassin's creed Revelations"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">
+                    Assassin's creed Brotherhood
+                  </h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2011</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-3.webp"
+                  alt="Assassin's creed 3"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">Assassin's creed III</h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2012</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-4-black-flag.webp"
+                  alt="Assassin's creed 4 Black Flag"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">
+                    Assassin's creed IV Black Flag
+                  </h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2013</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-rogue.webp"
+                  alt="Assassin's creed Rogue"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">Assassin's creed Rogue</h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2014</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-unity.webp"
+                  alt="Assassin's creed Unity"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">Assassin's creed Unity</h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2014</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-syndicate.jpg"
+                  alt="Assassin's creed Syndicate"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">
+                    Assassin's creed Syndicate
+                  </h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2015</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-origin.webp"
+                  alt="Assassin's creed Origins"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">Assassin's creed Origins</h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2017</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-odyssey.webp"
+                  alt="Assassin's creed Odyssey"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">Assassin's creed Odyssey</h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2018</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+
+            <!-- Card -->
+
+            <div class="col-10 offset-1 col-md-6 offset-md-0 col-xl-4">
+              <div class="card shadow h-100">
+                <img
+                  src="./assets/images/ac-valhalla.webp"
+                  alt="Assassin's creed Valhalla"
+                  class="card-img-top"
+                />
+                <div class="card-body py-5 px-3 text-start">
+                  <h3 class="fs-1 mb-5 card-title">
+                    Assassin's creed Valhalla
+                  </h3>
+                  <p class="h3">Date de sortie :</p>
+                  <p class="fs-1 card-subtitle">Novembre 2020</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Card -->
+          </div>
+        </div>
+      </section>
+      <!-- /section -->
+    </main>
+
+    <!-- /main -->
+
+    <!-- footer -->
+
+    <footer class="bg-primary text-light section">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-12 col-lg-4 order-lg-1 text-lg-start">
+            <p>Site web fait par <a href="#">Jonathan Nadeau</a></p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center order-lg-3 justify-content-lg-end"
+          >
+            <ul class="list-unstyled d-flex">
+              <li>
+                <a href="https://fr-fr.facebook.com/ubisoft/">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="mx-2">
+                <a href="https://www.instagram.com/ubisoft/">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/Ubisoft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                >
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 text-center col-lg-8 order-lg-2 text-lg-end">
+            Dans le cadre du AEC en Développement web (Frontend) du
+            <a href="">Cégèp de Trois-Rivières</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- /footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

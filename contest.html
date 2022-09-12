@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assassin's Creed | Concours</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- /CSS -->
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- /Bootstrap icons -->
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Accueil </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="characters.html">Personnages et jeux</a>
+            </li>
+            <li class="nav-item">
+              <a class="active nav-link" aria-current="page" href="contest.html"
+                >Concours</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- /Navbar -->
+
+    <!-- main -->
+
+    <main>
+      <!-- section -->
+
+      <section id="contest" class="background">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center my-5">
+              <span class="text-primary">Concours</span>
+            </h1>
+          </div>
+          <div class="row fs-3 mb-5">
+            <p>Courez la chance de gagner Assassin's Creed Valhala, le tout dernier jeux de la franchise, sur la console de votre choix. </p>
+          </div>
+        <form class="row mx-xl-5 g-3 needs-validation" novalidate id="contestForm" action="contestConfirmation.html">
+            <div class="col-12 col-md-6 d-flex flex-column">
+                <label for="firstName" class="form-label visually-hidden">Prénom</label>
+                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Prénom" aria-label="Prénom" required>
+                <div class="invalid-feedback">
+                    Ce champs est requis
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column">
+                <label for="lastName" class="form-label visually-hidden">Nom de famille</label>
+                <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Nom de famille" aria-label="Nom de famille" required>
+                <div class="invalid-feedback">
+                    Ce champs est requis
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-column">
+                <label for="adress" class="form-label visually-hidden">Adresse</label>
+                <input type="text" name="adress" id="adress" class="form-control" placeholder="Adresse" aria-label="Adresse" required>
+                <div class="invalid-feedback">
+                    Ce champs est requis 
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column">
+                <label for="city" class="form-label visually-hidden">Ville</label>
+                <input type="text" name="city" id="city" class="form-control" placeholder="Ville" aria-label="Ville" required>
+                <div class="invalid-feedback">
+                    Ce champs est requis
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column">
+                <label for="postalCode" class="form-label visually-hidden">Code Postal</label>
+                <input type="text" name="postalCode" id="postalCode" class="form-control" placeholder="Code Postal" aria-label="Code Postal" pattern=^(?!.*[DFIOQU])[A-VXY][0-9][A-Z]●?[0-9][A-Z][0-9]$ required>
+                <div class="invalid-feedback">
+                    Ce champs est requis et doit être dans le format 'A9A8C8'
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column">
+                <label for="province" class="form-label visually-hidden">Province</label>
+                <select class="form-select" name="province" id="province" aria-label="Province" required>
+                    <option value="" selected disabled>Province</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="Colombie-Britannique">Colombie-Britannique</option>
+                    <option value="Île-du-Prince-Edouard">Île-du-Prince-Edouard</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="Nouveau-Brunswick">Nouveau-Brunswick</option>
+                    <option value="Nouvelle-Écosse">Nouvelle-Écosse</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Québec">Québec</option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                    <option value="Terre-Neuve-et-Labrador">Terre-Neuve-et-Labrador</option>
+                    <option value="Nunvavut">Nunavut</option>
+                    <option value="Territoires du Nord-Ouest">Territoires du Nord-Ouest</option>
+                    <option value="Yukon">Yukon</option>
+                  </select>
+                <div class="invalid-feedback">
+                    Veuillez faire une sélection
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column">
+                <label for="tel" class="form-label visually-hidden">Numéro de téléphone</label>
+                <input type="tel" name="tel" id="tel" class="form-control" placeholder="Numéro de téléphone" aria-label="Numéro de téléphone" pattern=^\d{10}$ required>
+                <div class="invalid-feedback">
+                    Ce champs est requis et doit être dans le format '1234567890'
+                </div>
+            </div>
+            <div class="col-12 d-flex flex-column">
+                <label for="email" class="form-label visually-hidden">Courriel</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Courriel" aria-label="Courriel" required>
+                <div class="invalid-feedback">
+                    Ce champs est requis et doit être dans le format 'email@exemple.com'
+                </div>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 d-flex flex-column">
+                <label for="console" class="form-label visually-hidden">Choississez votre console de jeux</label>
+                <select class="form-select " name="console" id="console" aria-label="Choississez votre console de jeux" required>
+                    <option value="" selected disabled>Choississez votre console de jeux</option>
+                    <option value="PC">PC</option>
+                    <option value="XboxOne/XboxSX/">Xbox One | Xbox Series S | Xbox Series X</option>
+                    <option value="Playstation 5">Playstation 5</option>
+                  </select>
+                <div class="invalid-feedback">
+                    Veuillez faire une sélection
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Soummettre" class="btn btn-primary" role="button">
+            </div>
+        </form>
+      </section>
+
+      <!-- /section -->
+    </main>
+
+    <!-- /main -->
+
+    <!-- footer -->
+
+    <footer class="bg-primary text-light section"->
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-12 col-lg-4 order-lg-1 text-lg-start">
+            <p>Site web fait par <a href="#">Jonathan Nadeau</a></p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center order-lg-3 justify-content-lg-end"
+          >
+            <ul class="list-unstyled d-flex">
+              <li>
+                <a href="https://fr-fr.facebook.com/ubisoft/">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="mx-2">
+                <a href="https://www.instagram.com/ubisoft/">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/Ubisoft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                >
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 text-center col-lg-8 order-lg-2 text-lg-end">
+            Dans le cadre du AEC en Développement web (Frontend) du
+            <a href="">Cégèp de Trois-Rivières</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- /footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
