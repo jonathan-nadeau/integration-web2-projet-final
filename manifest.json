@@ -1,27 +1,6 @@
 {
-  "shortcuts": [
-    {
-      "name": "Assassin's Creed",
-      "url": "/",
-      "description": "Homepage"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "./assets/images/screenshot.png",
-      "sizes": "2382x1570",
-      "type": "image/png",
-      "description": "Homepage"
-    }
-  ],
-  "orientation": "any",
-  "theme_color": "#7a1315",
-  "background_color": "#fafcfb",
-  "display": "standalone",
-  "start_url": "/index.html",
   "name": "Assassin's Creed",
   "short_name": "AC",
-  "description": "Provides informations about Assassin's Creed video game",
   "icons": [
     {
       "src": "./assets/icons/icon-192x192.png",
@@ -49,5 +28,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#7a1315",
+  "background_color": "#fafcfb",
+  "description": "Provides information about Assassin's Creed video games"
 }
