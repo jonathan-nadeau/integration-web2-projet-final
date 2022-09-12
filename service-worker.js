@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v5';
+const CACHE_NAME = 'static-cache-v6';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
   'index.html',
@@ -44,21 +44,6 @@ const FILES_TO_CACHE = [
 ];
 self.addEventListener('install', (evt) => {
   console.log('[ServiceWorker] Install');
-  FILES_TO_CACHE.forEach(async (file) => {
-    try {
-      const response = await fetch(
-        `https://jonathan-nadeau.github.io/integration-web2-projet-final/${file}`
-      );
-      if (response.ok) {
-        console.log(`${file} : working`);
-      } else {
-        console.log(`${file} : not working`);
-        throw new Error(response.statusText);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  });
   // Precache static resources here.
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {

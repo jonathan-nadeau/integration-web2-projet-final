@@ -44,7 +44,6 @@
       }
     </script>
     <!-- /Service worker -->
-
   </head>
   <body>
     <!-- Navbar -->
@@ -80,6 +79,16 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="butInstall"
+                aria-label="Install"
+                hidden
+              >
+                Installer la PWA
+              </button>
             </li>
           </ul>
         </div>
@@ -221,5 +230,6 @@
 
     <!-- Bootstrap JS -->
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/install.js"></script>
   </body>
 </html>
