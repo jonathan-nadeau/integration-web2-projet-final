@@ -19,7 +19,7 @@
   "background_color": "#fafcfb",
   "display": "browser",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://jonathan-nadeau.github.io/integration-web2-projet-final/",
   "name": "Assassin's Creed",
   "short_name": "AC",
   "description": "Provides informations about Assassin's Creed video game",
