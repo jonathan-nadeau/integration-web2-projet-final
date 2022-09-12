@@ -1,4 +1,20 @@
 {
+  "shortcuts": [
+    {
+      "name": "Assassin's Creed",
+      "url": "/home",
+      "description": "Homepage"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/images/screenshot.png",
+      "sizes": "2382x1570",
+      "type": "image/png",
+      "description": "Homepage"
+    }
+  ],
+  "orientation": "any",
   "theme_color": "#7a1315",
   "background_color": "#fafcfb",
   "display": "browser",
