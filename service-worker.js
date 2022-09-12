@@ -44,10 +44,20 @@ const FILES_TO_CACHE = [
 ];
 self.addEventListener('install', (evt) => {
   console.log('[ServiceWorker] Install');
-  FILES_TO_CACHE.forEach((file) => {
-    console.log(
-      `https://jonathan-nadeau.github.io/integration-web2-projet-final/${file}`
-    );
+  FILES_TO_CACHE.forEach(async (file) => {
+    try {
+      const response = await fetch(
+        `https://jonathan-nadeau.github.io/integration-web2-projet-final/${file}`
+      );
+      if (response.ok) {
+        console.log(`${file} : working`);
+      } else {
+        console.log(`${file} : not working`);
+        throw new Error(response.statusText);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   });
   // Precache static resources here.
   evt.waitUntil(
