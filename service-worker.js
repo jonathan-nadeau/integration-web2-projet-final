@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v11';
+const CACHE_NAME = 'static-cache-v12';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
   'index.html',
@@ -80,7 +80,7 @@ self.addEventListener('fetch', (evt) => {
   evt.respondWith(
     fetch(evt.request).catch(() => {
       return caches.open(CACHE_NAME).then((cache) => {
-        return cache.match('./src/index.html');
+        return cache.match('/index.html');
       });
     })
   );
