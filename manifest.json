@@ -17,7 +17,7 @@
   "orientation": "any",
   "theme_color": "#7a1315",
   "background_color": "#fafcfb",
-  "display": "browser",
+  "display": "standalone",
   "scope": "/",
   "start_url": "https://jonathan-nadeau.github.io/integration-web2-projet-final/",
   "name": "Assassin's Creed",
