@@ -35,20 +35,23 @@
 
     <!-- Service worker -->
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('service-worker.js').then((reg) => {
-            console.log('Service worker registered.', reg);
-          });
-        });
-      }
+      navigator.serviceWorker.register('js/sw.js');
     </script>
-  <script>navigator.serviceWorker.register("js/sw.js")</script> 
-  <script>navigator.serviceWorker.register("js/sw.js")</script> 
-  <script>navigator.serviceWorker.register("js/sw.js")</script> 
-  <script>navigator.serviceWorker.register("js/sw.js")</script> 
-  <script>navigator.serviceWorker.register("js/sw.js")</script> 
-  <script>navigator.serviceWorker.register("js/sw.js")</script> 
+    <script>
+      navigator.serviceWorker.register('js/sw.js');
+    </script>
+    <script>
+      navigator.serviceWorker.register('js/sw.js');
+    </script>
+    <script>
+      navigator.serviceWorker.register('js/sw.js');
+    </script>
+    <script>
+      navigator.serviceWorker.register('js/sw.js');
+    </script>
+    <script>
+      navigator.serviceWorker.register('js/sw.js');
+    </script>
     <!-- /Service worker -->
   </head>
   <body>
@@ -236,6 +239,5 @@
 
     <!-- Bootstrap JS -->
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/install.js"></script>
   </body>
 </html>
