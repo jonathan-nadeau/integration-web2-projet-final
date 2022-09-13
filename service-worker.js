@@ -14,7 +14,7 @@ Copyright 2015, 2019 Google Inc. All Rights Reserved.
 // Incrementing OFFLINE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 const OFFLINE_VERSION = 1;
-const CACHE_NAME = 'static_cache_v2';
+const CACHE_NAME = 'static_cache_v3';
 // Customize this with a different URL if needed.
 const FILES_TO_CACHE = [
   'index.html',
@@ -95,10 +95,9 @@ self.addEventListener('fetch', (evt) => {
     return;
   }
   evt.respondWith(
-    fetch(evt.request).catch(() => {
-      return caches.open(CACHE_NAME).then((cache) => {
-        return cache.match('/Cochenille/PointNClick/offline.html');
-      });
+    fetch(evt.request).catch(async () => {
+      const cache = await caches.open(CACHE_NAME);
+      return await cache.match('index.html');
     })
   );
 });
