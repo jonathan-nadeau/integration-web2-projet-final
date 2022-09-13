@@ -45,7 +45,14 @@
       "src": "assets/images/screenshot.png",
       "sizes": "2382x1570",
       "type": "image/png",
-      "description": "Homepage",
+      "description": "Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Assassin's Creed",
+      "url": "/shortcut",
+      "description": "Open the homepage",
       "icons": [
         {
           "src": "assets/icons/icon-96x96.png",
@@ -73,13 +80,6 @@
           "type": "image/png"
         }
       ]
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Assassin's Creed",
-      "url": "/shortcut",
-      "description": "Open the homepage"
     }
   ]
 }
