@@ -38,7 +38,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker
-          .register('/service-worker.js', {
+          .register('/integration-web2-projet-final/service-worker.js', {
             scope: '/integration-web2-projet-final/',
           })
           .then((reg) => {
