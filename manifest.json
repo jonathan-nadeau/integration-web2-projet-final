@@ -2,7 +2,7 @@
   "theme_color": "#7a1315",
   "background_color": "#fafcfb",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/integration-web2-projet-final/",
   "start_url": "index.html",
   "name": "Assassin's Creed",
   "short_name": "Assassin's Creed",
