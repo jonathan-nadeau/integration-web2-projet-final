@@ -14,7 +14,7 @@ Copyright 2015, 2019 Google Inc. All Rights Reserved.
 // Incrementing OFFLINE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 const OFFLINE_VERSION = 1;
-const CACHE_NAME = 'static_cache_v9';
+const CACHE_NAME = 'static_cache_v10';
 // Customize this with a different URL if needed.
 const FILES_TO_CACHE = [
   'index.html',
@@ -56,6 +56,9 @@ const FILES_TO_CACHE = [
   'assets/icons/icon-384x384.png',
   'assets/icons/icon-256x256.png',
   'assets/icons/icon-192x192.png',
+  'assets/icons/icon-144x144.png',
+  'assets/icons/icon-96x96.png',
+  'assets/icons/favicon.ico',
 ];
 
 self.addEventListener('install', (event) => {
