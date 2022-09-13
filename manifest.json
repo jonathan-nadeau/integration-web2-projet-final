@@ -7,7 +7,7 @@
   "name": "Assassin's Creed",
   "short_name": "Assassin's Creed",
   "description": "Fournit de l'information sur les jeux vidéo Assissin's Creed",
-  "orientation": "landscape",
+  "orientation": "any",
   "icons": [
     {
       "src": "assets/icons/icon-192x192.png",
